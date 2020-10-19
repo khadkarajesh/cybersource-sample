@@ -155,7 +155,6 @@ app.use('/sign', (req, res) => {
 
 
 app.use('/pay', (req, res) => {
-    let payment = initPayment()
 })
 
 // catch 404 and forward to error handler
