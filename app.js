@@ -42,6 +42,10 @@ function appendZero(digit) {
     }
 }
 
+const accessKey = 'a6fcaf71650738088bad7a17be9d32e7';
+const profileId = 'BC56D4B8-E664-43CF-9BB6-684190EE5926';
+const secretKey = 'fa4079f7996546d48263441bdeaf9985c57b51aee0344b00a814082d0c4e3368b2a47006707f4b61a9395382c0a581f49264ec3fb5e04ade810cf86e6ea02493d198fac2e6c0492f92b7bb679db3a61a5d041d0f3cf545b0a1fdd3394ee31a10f506a7a506a04f5f9d913279e5383d41dfce4c0034c841c5a7afbc34bd712e06';
+
 function generateRandom(length) {
     let result = '';
     let characters = '0123456789';
@@ -56,8 +60,8 @@ function generateRandom(length) {
 app.use('/sign', (req, res) => {
     let signedFieldNames = 'access_key,profile_id,transaction_uuid,signed_field_names,unsigned_field_names,signed_date_time,locale,transaction_type,reference_number,amount,currency,payment_method,bill_to_forename,bill_to_surname,bill_to_email,bill_to_phone,bill_to_address_line1,bill_to_address_city,bill_to_address_state,bill_to_address_country,bill_to_address_postal_code,auth_trans_ref_no';
     let payment = {
-        access_key: 'a6fcaf71650738088bad7a17be9d32e7', // codeavatar
-        profile_id: 'BC56D4B8-E664-43CF-9BB6-684190EE5926', // codeavtar
+        access_key: accessKey,
+        profile_id: profileId,
         signed_field_names: signedFieldNames,
         unsigned_field_names: 'card_type,card_number,card_expiry_date',
         locale: 'en-us',
@@ -89,7 +93,7 @@ app.use('/sign', (req, res) => {
     signedFields.forEach((item) => {
         fieldValues.push(item + "=" + req.body[item]);
     });
-    const hash = crypto.createHmac('sha256', 'fa4079f7996546d48263441bdeaf9985c57b51aee0344b00a814082d0c4e3368b2a47006707f4b61a9395382c0a581f49264ec3fb5e04ade810cf86e6ea02493d198fac2e6c0492f92b7bb679db3a61a5d041d0f3cf545b0a1fdd3394ee31a10f506a7a506a04f5f9d913279e5383d41dfce4c0034c841c5a7afbc34bd712e06')
+    const hash = crypto.createHmac('sha256', secretKey)
         .update(fieldValues.join(","))
         .digest('base64');
 
@@ -124,7 +128,7 @@ app.use('/sign', (req, res) => {
     form.append("signature", hash);
     form.append("auth_trans_ref_no", payment.auth_trans_ref_no);
 
-    console.log(`body :${JSON.stringify(payment)}`)
+    console.log(`body :${JSON.stringify(form)}`)
 
     // axios.interceptors.request.use(request => {
     //     console.log('Starting Request', JSON.stringify(request, null, 2))
