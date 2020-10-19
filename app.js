@@ -145,9 +145,9 @@ app.use('/sign', (req, res) => {
         .then(response => {
                 console.log(`success response ${response}`);
             }
-        ).catch((reason => {
+        ).catch(reason => {
         console.log(`error response ${reason}`)
-    }));
+    });
 
 
     res.send({'hash': hash});

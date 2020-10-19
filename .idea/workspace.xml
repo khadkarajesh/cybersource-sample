@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab2a7b2-bb94-415e-a509-75b7ce35ff27" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,7 +25,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1itvxmFncfE4HIH8awXubS29Cng" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,6 +48,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,33 +62,48 @@
       <workItem from="1602739952354" duration="3129000" />
       <workItem from="1602828223113" duration="5260000" />
       <workItem from="1602924989678" duration="43000" />
-      <workItem from="1603080891367" duration="10138000" />
+      <workItem from="1603080891367" duration="10465000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1897" height="389" key="GridCell.Tab.0.bottom" timestamp="1603106179915">
+    <state width="1897" height="389" key="GridCell.Tab.0.bottom" timestamp="1603106279965">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1343" height="155" key="GridCell.Tab.0.bottom/0.27.1366.693/1366.0.1920.1080@0.27.1366.693" timestamp="1603097830412" />
-    <state width="1897" height="389" key="GridCell.Tab.0.bottom/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106179915" />
-    <state width="1897" height="389" key="GridCell.Tab.0.center" timestamp="1603106179915">
+    <state width="1897" height="389" key="GridCell.Tab.0.bottom/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106279965" />
+    <state width="1897" height="389" key="GridCell.Tab.0.center" timestamp="1603106279965">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1343" height="155" key="GridCell.Tab.0.center/0.27.1366.693/1366.0.1920.1080@0.27.1366.693" timestamp="1603097830412" />
-    <state width="1897" height="389" key="GridCell.Tab.0.center/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106179915" />
-    <state width="1897" height="389" key="GridCell.Tab.0.left" timestamp="1603106179915">
+    <state width="1897" height="389" key="GridCell.Tab.0.center/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106279965" />
+    <state width="1897" height="389" key="GridCell.Tab.0.left" timestamp="1603106279964">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1343" height="155" key="GridCell.Tab.0.left/0.27.1366.693/1366.0.1920.1080@0.27.1366.693" timestamp="1603097830412" />
-    <state width="1897" height="389" key="GridCell.Tab.0.left/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106179915" />
-    <state width="1897" height="389" key="GridCell.Tab.0.right" timestamp="1603106179915">
+    <state width="1897" height="389" key="GridCell.Tab.0.left/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106279964" />
+    <state width="1897" height="389" key="GridCell.Tab.0.right" timestamp="1603106279965">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state width="1343" height="155" key="GridCell.Tab.0.right/0.27.1366.693/1366.0.1920.1080@0.27.1366.693" timestamp="1603097830412" />
-    <state width="1897" height="389" key="GridCell.Tab.0.right/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106179915" />
+    <state width="1897" height="389" key="GridCell.Tab.0.right/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106279965" />
+    <state x="1815" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1603106509115">
+      <screen x="1366" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1815" y="175" width="1022" height="737" key="SettingsEditor/0.27.1366.693/1366.0.1920.1080@1366.0.1920.1080" timestamp="1603106509115" />
   </component>
 </project>
