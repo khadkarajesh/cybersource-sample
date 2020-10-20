@@ -90,9 +90,16 @@ app.use('/sign', (req, res) => {
 
     let signedFields = signedFieldNames.split(",");
     let fieldValues = [];
+
+    let requestStr = JSON.stringify(payment);
+    let requestBody = JSON.parse(requestStr)
+
     signedFields.forEach((item) => {
-        fieldValues.push(item + "=" + req.body[item]);
+        console.log(item + "=" + requestBody[item]);
+        fieldValues.push(item + "=" + requestBody[item]);
     });
+
+    console.log(fieldValues)
     const hash = crypto.createHmac('sha256', secretKey)
         .update(fieldValues.join(","))
         .digest('base64');
